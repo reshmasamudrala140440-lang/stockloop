@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockLoop | Smart Excess Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>StockLoop</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#add-stock">List Stock</a>
+      <a href="#dashboard">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="tagline">SMARTER STOCK. LESS WASTE.</p>
+      <h1>Give Extra Stock a <span>Second Chance.</span></h1>
+      <p>Connect businesses with surplus inventory to businesses
+         that need it.</p>
+      <a class="button" href="#marketplace">Explore Stock</a>
+    </section>
+
+    <section id="dashboard">
+      <h2>StockLoop Dashboard</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3 id="total-products">0</h3>
+          <p>Listed Products</p>
+        </div>
+        <div class="stat">
+          <h3 id="total-units">0</h3>
+          <p>Units Available</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="marketplace">
+      <h2>Explore Available Stock</h2>
+      <input id="search" type="search"
+        placeholder="Search products...">
+      <div id="product-list" class="products"></div>
+    </section>
+
+    <section id="add-stock">
+      <h2>List Your Extra Stock</h2>
+      <form id="stock-form">
+        <input id="product-name" placeholder="Product name"
+          required>
+        <input id="category" placeholder="Category" required>
+        <input id="price" type="number" min="0" step="0.01"
+          placeholder="Price per unit" required>
+        <input id="quantity" type="number" min="1" step="1"
+          placeholder="Quantity" required>
+        <button type="submit">Add Product</button>
+      </form>
+      <p id="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 StockLoop | A student project for smarter
+       inventory reuse.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

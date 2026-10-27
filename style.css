@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #20352b;
+  background: #f7faf7;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 18px 7%;
+  background: white;
+  border-bottom: 1px solid #e2eae3;
+}
+
+header h2 {
+  color: #198754;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #20352b;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #198754;
+}
+
+section {
+  padding: 55px 7%;
+  scroll-margin-top: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 7%;
+  background: #e8f5e9;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #198754;
+}
+
+.tagline {
+  color: #198754;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.button, button {
+  display: inline-block;
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+button:hover, .button:hover {
+  background: #126b40;
+}
+
+.stats, .products {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(210px, 1fr)
+  );
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.stat, .product-card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #e2eae3;
+  border-radius: 12px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #198754;
+  margin-bottom: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 12px 0;
+  padding: 13px;
+  border: 1px solid #ccd8ce;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.price {
+  color: #198754;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #20352b;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    gap: 14px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  section {
+    padding: 38px 5%;
+  }
+}
